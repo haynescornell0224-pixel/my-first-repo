@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cy's portfolio: a student learning to code and build websites.">
+  <title>Cy's Portfolio</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg'><text y='.9em' font-size='90'>💻</text></svg>">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <nav aria-label="Main menu">
+      <ul class="menu">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+    </nav>
+
+    <button type="button" id="themeBtn" class="btn">Change Theme</button>
+  </header>
+
+  <main>
+
+    <section id="intro" class="hero section">
+      <div class="hero-text">
+        <h1 id="top">Hi, I'm Cy</h1>
+        <p>Welcome to my portfolio!</p>
+        <p>I'm a student learning how to code and build websites.</p>
+      </div>
+
+      <div class="hero-image">
+        <img src="https://picsum.photos/300/200" alt="Placeholder photo" width="300" height="200">
+      </div>
+    </section>
+    
+    <section id="gallery">
+  <h2>My Image Gallery</h2>
+  <p>Here are some of my favorite pictures.</p>
+
+  <div class="gallery">
+    <figure>
+      <img src="https://picsum.photos/id/1015/400/300" alt="Mountain landscape">
+      <figcaption>Nature</figcaption>
+    </figure>
+
+    <figure>
+      <img src="https://picsum.photos/id/1011/400/300" alt="Forest landscape">
+      <figcaption>Adventure</figcaption>
+    </figure>
+
+    <figure>
+      <img src="https://picsum.photos/id/1025/400/300" alt="Dog portrait">
+      <figcaption>Animals</figcaption>
+    </figure>
+
+    <figure>
+      <img src="https://picsum.photos/id/1039/400/300" alt="Coastal landscape">
+      <figcaption>Travel</figcaption>
+    </figure>
+
+    <figure>
+      <img src="https://picsum.photos/id/1043/400/300" alt="Scenic landscape">
+      <figcaption>Scenery</figcaption>
+    </figure>
+
+    <figure>
+      <img src="https://picsum.photos/id/106/400/300" alt="Nature photograph">
+      <figcaption>Memories</figcaption>
+    </figure>
+  </div>
+</section>
+
+    <section id="about" class="section about-layout">
+      <div class="section-heading">
+        <h2>About Me</h2>
+      </div>
+
+      <div class="about-content">
+        <p>I'm a <strong>student</strong> who is learning to code.</p>
+        <p>I'm <mark>building my first website.</mark></p>
+        <p>I study at <abbr title="Cavite State University CCAT Campus">CVSU CCAT</abbr></p>
+        <p>My birthday is on February 24<sup>th</sup>.</p>
+        <p>Status: <del>Beginner</del> <ins>Learning fast</ins></p>
+
+        <blockquote>
+          Practice makes perfect, but no one is perfect, so why practice?
+        </blockquote>
+
+        <p><small>Last updated: <time datetime="2026-10">October 2026</time></small></p>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+
+      <div class="skills-layout">
+        <div class="skills-card">
+          <h3>Java</h3>
+          <p>Programming</p>
+          <span>Learning</span>
+        </div>
+
+        <div class="skills-card">
+          <h3>HTML</h3>
+          <p>Web Development</p>
+          <span>Learning</span>
+        </div>
+
+        <div class="skills-card">
+          <h3>Problem Solving</h3>
+          <p>General</p>
+          <span>Practicing</span>
+        </div>
+      </div>
+
+      <div class="table-container">
+        <table>
+          <caption>My Skills</caption>
+          <thead>
+            <tr>
+              <th scope="col">Skill</th>
+              <th scope="col">Type</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Java</td>
+              <td>Programming</td>
+              <td>Learning</td>
+            </tr>
+            <tr>
+              <td>HTML</td>
+              <td>Web</td>
+              <td>Learning</td>
+            </tr>
+            <tr>
+              <td>Problem Solving</td>
+              <td>General</td>
+              <td>Practicing</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="project" class="section">
+      <h2>Projects</h2>
+
+      <div class="projects-layout">
+
+        <article class="project featured">
+          <h3>Project 1: This Website</h3>
+
+          <figure>
+            <img
+              src="https://placehold.co/400x250"
+              alt="Screenshot of my portfolio website"
+              width="400"
+              height="250"
+              loading="lazy"
+            >
+            <figcaption>Project 1: My portfolio website</figcaption>
+          </figure>
+
+          <p>My first line of Java: <code>System.out.println("Hello World");</code></p>
+
+          <p>
+            Visit my
+            <a href="https://www.w3schools.com/html/html_links.asp" target="_blank" rel="noopener noreferrer">Tutorial</a>.
+          </p>
+        </article>
+
+        <article class="project">
+          <h3>Project 2: Demo Video</h3>
+
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/Wh3Uxtby_gY?si=VDVz8K9ETYZr1bLk"
+              title="Project 2 demo video"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <p>Still working on it.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-layout">
+      <div class="contact-info">
+        <h2>Contact Me</h2>
+
+        <address>
+          <span class="sprite-icon icon-email" aria-hidden="true"></span>
+          Email: <a href="mailto:haynescornell0224@gmail.com">haynescornell0224@gmail.com</a><br>
+          <span class="sprite-icon icon-email" aria-hidden="true"></span>
+          Philippines
+        </address>
+      </div>
+
+      <div class="contact-buttons">
+        <button type="button" id="emailBtn" class="btn">Email Me</button>
+        <button type="button" id="callBtn" class="btn">Call Me</button>
+      </div>
+    </section>
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>Have a question or suggestion? Send me a message!</p>
+
+  <form class="contact-form" action="#" method="post">
+    <div class="form-group">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="topic">Topic</label>
+      <select id="topic" name="topic" required>
+        <option value="">Choose a topic</option>
+        <option value="question">Question</option>
+        <option value="suggestion">Suggestion</option>
+        <option value="collaboration">Collaboration</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+    </div>
+
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
+  </main>
+
+  <footer>
+    <h3><a href="#top">Back to top</a></h3>
+    <p><small>© 2026 Cy's Portfolio</small></p>
+  </footer>
+
+</body>
+</html>
+
